@@ -67,3 +67,6 @@ CREATE TABLE FundingOpportunities (
     deadline DATE,                             -- Application deadline
     link VARCHAR(255) NOT NULL                 -- Application link
 );
+
+
+ALTER TABLE Users ADD COLUMN role ENUM('admin', 'user') DEFAULT 'user';
